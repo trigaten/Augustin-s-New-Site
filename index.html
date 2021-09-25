@@ -2,45 +2,58 @@
 layout: default
 title: Long Haul
 ---
-  <div class="container">
-    <div class="row">
-      <div class="col-8 rounded">
-        <h2>Hi, I'm Augustin.</h2>
-        <h5>I'm running to be your next state senator in the Nation of College Park.</h5>
-    </div>
-      <div class="col-4">
-        <img class="img-fluid center-block d-block mx-auto" style="border-radius:1%; border: 1px solid red;margin:0 auto;" src="assets/img/augustin.jpeg" alt="">
-      </div>
+<div class="container">
+  <div class="row">
+    <div class="col-8 rounded">
+      <h2 class="mb-md-3">Hi, I'm Augustin.</h2>
+      <h5 class="mb-md-5">I'm running to be your next member of the House of Delegates in District 47B.</h5>
+      <p style="color: black;">
+        <!-- Good day and evening. My name is Augustin Saah and I am running to be a member of the house of delegates in
+        District 47B. -->
 
+
+        I want to help district 47 as best as I know how. Creating laws which help all of us, in addition to advocating
+        for the desperate infrastructure needs of our community is my objective. As a Public Policy and Philosophy major
+        in pursuit of my Masters of Laws degree, it is now my time to finish my senior year at the University of
+        Maryland and represent the surrounding communities of my college campus.
+      </p>
+    </div>
+    <div class="col-4">
+      <img class="img-fluid center-block d-block mx-auto" style="border: 10px solid rgb(224, 58, 62);margin:0 auto;"
+        src="assets/img/augustin.jpeg" alt="">
+    </div>
+
+  </div>
+</div>
+</div>
+
+
+<div class="" style="background-color: rgb(224, 58, 62);height: 500px;">
+  <div class="row">
+    <div class="col mt-5">
+      <h1 class="ml-5">Policy, action, and arithmetic</h1>
     </div>
   </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col mt-5">
-        <h1>Policy, action, and arithmetic</h1>
-      </div>
-    </div>
-  </div>
+</div>
 
 <div class="home" id="home">
   <!-- <h1 class="pageTitle">Recent Posts</h1> -->
   <ul class="posts noList">
     {%- for post in paginator.posts -%}
-      <li>
-        <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
-        <h3><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></h3>
-        <p>{%- if post.description -%}{{ post.description }}{%- else -%}{{ post.excerpt | strip_html }}{%- endif -%}</p>
-      </li>
+    <li>
+      <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
+      <h3><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></h3>
+      <p>{%- if post.description -%}{{ post.description }}{%- else -%}{{ post.excerpt | strip_html }}{%- endif -%}</p>
+    </li>
     {%- endfor -%}
   </ul>
   <!-- Pagination links -->
   <div class="pagination">
     {%- if paginator.previous_page -%}
-      <a href="{{ paginator.previous_page_path }}" class="previous button__outline">Newer Posts</a> 
+    <a href="{{ paginator.previous_page_path }}" class="previous button__outline">Newer Posts</a>
     {%- endif -%}
     {%- if paginator.next_page -%}
-      <a href="{{ paginator.next_page_path }}" class="next button__outline">Older Posts</a>
+    <a href="{{ paginator.next_page_path }}" class="next button__outline">Older Posts</a>
     {%- endif -%}
   </div>
 </div>
