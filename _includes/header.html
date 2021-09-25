@@ -1,14 +1,21 @@
  <div class="header {% if site.header == "large" %}header--large{% endif %}">
      <div class="container">
-         <h1 class="logo"><a href="/">{{ site.title }}</a></h1>
-         <nav class="nav-collapse">
-             <ul class="">
-                 {%- for link in site.navigation -%}{%- assign current = nil -%}{%- if page.url contains link.url or forloop.first and page.url == '/' or page.url == 'index.html' -%}{%- assign current = 'current' -%}{%- endif -%}
-                 <li class="element {%- if forloop.first -%}first{%- endif -%} {{ current }} {%- if forloop.last -%}last{%- endif -%}" style="color: black;">
-                     <a href="{{ link.url }}">{{ link.title }}</a>
-                 </li> 
-                 {%- endfor -%}
-                 </ul>
-         </nav>
+         <div class="row">
+             <div class="col-12 px-5 pb-3" >
+                <nav class="nav-collapse">
+                    <ul>
+                        <!-- text-shadow: 0 0 3px #FF0000, 0 0 5px rgb(186, 160, 54); -->
+                        {%- for link in site.navigation -%}{%- assign current = nil -%}{%- if page.url contains link.url or forloop.first and page.url == '/' or page.url == 'index.html' -%}{%- assign current = 'current' -%}{%- endif -%}
+                        <li class="element {%- if forloop.first -%}first{%- endif -%} {{ current }} {%- if forloop.last -%}last{%- endif -%}" style="color: white;">
+                            <a href="{{ link.url }}">{{ link.title }}</a>
+                        </li> 
+                        {%- endfor -%}
+                        </ul>
+                </nav>
+                <h1 class="logo ml-2 text-center mx-auto"><a href="/">{{ site.title }}</a></h1>
+                 
+             </div>
+         </div>
+        
      </div>
  </div><!-- end .header -->

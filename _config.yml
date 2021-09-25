@@ -1,4 +1,4 @@
-title: Augustin
+title: Augustin Jokell
 description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
 url: augustin-site
 # url: http://long-haul.netlify.app
@@ -13,6 +13,8 @@ highlighter: rouge
 plugins: [jekyll-paginate]
 paginate: 5
 
+                        # <li class="element">+1(301)802-8146</li>
+                        # <li class="element">My email @email.com</li>
 navigation:
   - title: Home
     url: /index.html
@@ -20,6 +22,10 @@ navigation:
     url: /about
   - title: Contact
     url: /contact
+  # - title: +1(301)802-8146
+  #   url: /contact
+  # - title: My email @email.com
+  #   url: /contact
 
 social:
   github: brianmaierjr
