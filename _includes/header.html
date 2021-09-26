@@ -1,31 +1,45 @@
- <div class="header {% if site.header == "large" %}header--large{% endif %}">
-     <!-- <nav class="navbar nav-collapse" style="width: 100%;background-color: aqua;">
-     <ul class="navbar-nav mr-auto" style="display: inline;">
-         <li>
-             Hi 
-         </li>
-         <li class="pl-auto">ddd</li>
-     </ul>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.9.2/bootstrap-social.css"
+    integrity="sha512-EBs0Neps4UM7qLxWO1TZbgQEYmDKNvaRZw2Zu7IeOSCGvfXCXPBEB/tIql3Jeh91sSyvSWCw6weZtGENoPQ0jg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- <style>
+    *{
+        border: 1px solid black;
+    }
+</style> -->
+<div class="header {% if site.header == " large" %}header--large{% endif %}">
+    <div style="margin-bottom: -50px;" class="container-fluid">
+        <div class="row">
+            <div class="col mt-3 ml-2">
+                <a href="https://twitter.com/saah_augustin" style="color:white"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="https://www.facebook.com/augustin.saah.94/posts/168256378792075" style="color:white"><i
+                        class="fab fa-facebook fa-2x"></i></a>
+                <a href="https://www.instagram.com/augustin_saah/" style="color:white"><i class="fab fa-instagram fa-2x"></i></a>
     
-     <div class="ml-5">dddddd</span> -->
-    <!-- </nav> -->
-    <div class="container">
-         <div class="row">
-             <div class="col-12 px-5 pb-3" >
-                <nav class="nav-collapse">
-                    <ul>
+            </div>
+        </div>
+                </div>
+    <div class="container mt-0 pt-0" style="margin-top: -50px;">
+        <div class="row mt-0 pt-0">
+            <div class="col-12 px-5 pb-3 mt-0 pt-0">
+                <nav class="nav-collapse mt-0 pt-0">
+                    <ul class="mt-0 pt-0">
                         <!-- text-shadow: 0 0 3px #FF0000, 0 0 5px rgb(186, 160, 54); -->
-                        {%- for link in site.navigation -%}{%- assign current = nil -%}{%- if page.url contains link.url or forloop.first and page.url == '/' or page.url == 'index.html' -%}{%- assign current = 'current' -%}{%- endif -%}
-                        <li class="element {%- if forloop.first -%}first{%- endif -%} {{ current }} {%- if forloop.last -%}last{%- endif -%}" style="color: white;">
+                        {%- for link in site.navigation -%}{%- assign current = nil -%}{%- if page.url contains link.url
+                        or forloop.first and page.url == '/' or page.url == 'index.html' -%}{%- assign current =
+                        'current' -%}{%- endif -%}
+                        <li class="element mt-0 pt-0 {%- if forloop.first -%}first{%- endif -%} {{ current }} {%- if forloop.last -%}last{%- endif -%}"
+                            style="color: white;">
                             <a href="{{ link.url }}">{{ link.title }}</a>
-                        </li> 
+                        </li>
                         {%- endfor -%}
-                        </ul>
+                    </ul>
                 </nav>
-                <h1 class="logo ml-2 text-center mx-auto" style="text-shadow: 0 0 3px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255, 0);"><a href="/">{{ site.title }}</a></h1>
-                 
-             </div>
-         </div>
-        
-     </div>
- </div><!-- end .header -->
+                <h1 class="logo ml-2 text-center mx-auto"
+                    style="text-shadow: 0 0 3px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255, 0);"><a href="/">{{
+                        site.title }}</a></h1>
+
+            </div>
+        </div>
+
+    </div>
+</div><!-- end .header -->
