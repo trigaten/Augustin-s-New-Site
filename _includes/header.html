@@ -6,18 +6,27 @@
         border: 1px solid black;
     }
 </style> -->
+
 <div class="header {% if site.header == " large" %}header--large{% endif %}">
-    <div style="margin-bottom: -50px;" class="container-fluid">
-        <div class="row">
-            <div class="col mt-3 ml-2">
-                <a href="https://twitter.com/saah_augustin" style="color:white"><i class="fab fa-twitter fa-2x"></i></a>
-                <a href="https://www.facebook.com/augustin.saah.94/posts/168256378792075" style="color:white"><i
-                        class="fab fa-facebook fa-2x"></i></a>
-                <a href="https://www.instagram.com/augustin_saah/" style="color:white"><i class="fab fa-instagram fa-2x"></i></a>
-    
+    <div style="margin-bottom: -50px;position: absolute;" class="container-fluid">
+        <div class="row d-sm-none d-md-flex
+        ">
+            <!-- mt-3 ml-2 -->
+            <div class="col-md-12 col-lg-6 text-md-right text-lg-left mt-3">
+                <a
+                    href="https://www.facebook.com/augustin.saah.94?hc_ref=ARRCLe3UgskeNiuPRUc0a_0VI5dMxQuq8klVSNSYhWM7vpBGlsa0Ue08Z0bvGICzp5Q&ref=nf_target"><img
+                        src="assets/img/social/facebook.png" alt="facebook" style="height: 50px;"></a>
+                <a href="https://twitter.com/saah_augustin"><img src="assets/img/social/twitter.png" alt="facebook"
+                        style="height: 50px;"></a>
+                <a href="https://www.instagram.com/augustin_saah/"><img src="assets/img/social/instagram.png"
+                        alt="facebook" style="height: 50px;"></a>
+            </div>
+            <div class="col-lg-6 text-right mt-3">
+                <i class="fas fa-phone fa-2x"></i>
+                <i class="fas fa-envelope fa-2x"></i>
             </div>
         </div>
-                </div>
+    </div>
     <div class="container mt-0 pt-0" style="margin-top: -50px;">
         <div class="row mt-0 pt-0">
             <div class="col-12 px-5 pb-3 mt-0 pt-0">
@@ -35,7 +44,8 @@
                     </ul>
                 </nav>
                 <h1 class="logo ml-2 text-center mx-auto"
-                    style="text-shadow: 0 0 3px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255, 0);"><a href="/">{{
+                    style="text-shadow: 0 0 3px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255, 0);color: white;"><a
+                        href="/">{{
                         site.title }}</a></h1>
 
             </div>
