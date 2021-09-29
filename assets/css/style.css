@@ -1,3 +1,12 @@
+.logo{
+    height: 6vw;
+    max-height: 50px;
+}
+
+.logo-small{
+    height: 40px;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,800);
 @import url(https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic);
 html {
@@ -831,7 +840,7 @@ dd {
 }
 
 .footer .container {
-    border-top: 4px solid #d9d9d9;
+    border-top: 4px solid rgb(38, 82, 155);
     padding-top: .5em;
     max-width: 90%
 }
@@ -936,7 +945,7 @@ dd {
         border-bottom: 1px solid #1a1a1a
     }
     .footer .container {
-        border-top-color: #1a1a1a
+        border-top-color: rgb(38, 82, 155)
     }
 }
 
@@ -1110,7 +1119,7 @@ dd {
     .content:after, .post .featuredImage:before {
         background: black;
         border-top: 2px solid yellow;
-        border-bottom: 10px solid rgb(160, 21, 40);
+        border-bottom: 10px solid rgb(38, 82, 155);;
     }
 }
 

@@ -1,40 +1,35 @@
 title: Augustin Saah
-description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
+email: sanderschulhoff@gmail.com
+
+description: Website of Augustin Saah, candidate for House of Delegates in District 47B.
 url: augustin-site
 # url: http://long-haul.netlify.app
-paginate_path: "blog/page:num/"
-permalink: blog/:title/
 
 # Header Option
 # header: large
 
 markdown: kramdown
 highlighter: rouge
-plugins: [jekyll-paginate]
-paginate: 5
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
-                        # <li class="element">+1(301)802-8146</li>
-                        # <li class="element">My email @email.com</li>
 navigation:
   - title: Home
-    url: /index.html
+    url: \#
   - title: About
-    url: /about
+    url: \#about
   - title: Contact
-    url: /contact
+    url: \#contact
   # - title: +1(301)802-8146
   #   url: /contact
   # - title: My email @email.com
   #   url: /contact
 
-social:
-  github: brianmaierjr
-  twitter: brianmaierjr
-  facebook: brianmaierjr
-  email: brimaidesigns@gmail.com
-  linkedin: brianmaierjr
+# social:
+#   twitter: brianmaierjr
+#   facebook: brianmaierjr
+#   email: brimaidesigns@gmail.com
 
 google_analytics: "UA-58263416-1"
-
-disqus:
-    shortname: brianmaierjr
