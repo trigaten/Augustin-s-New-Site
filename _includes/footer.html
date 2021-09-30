@@ -1,8 +1,8 @@
 <div class="container-fluid" id="contact" style="background-color: rgb(38, 82, 155);border-top:1px solid black">
 	<div class="row">
-		<div class="col-6 py-2 align-top">
+		<div class="col-5 py-2 align-top">
 
-			<div class="">
+			<div class="mt-1">
 				<a
 					href="https://www.facebook.com/augustin.saah.94?hc_ref=ARRCLe3UgskeNiuPRUc0a_0VI5dMxQuq8klVSNSYhWM7vpBGlsa0Ue08Z0bvGICzp5Q&ref=nf_target"><img
 						class="logo-small" src="assets/img/social/facebook.png" alt="facebook"></a>
@@ -11,17 +11,21 @@
 				<a href="https://www.instagram.com/augustin_saah/"><img src="assets/img/social/instagram.png"
 						class="logo-small" alt="facebook"></a>
 			</div>
-			<span style="color: black;">
+			<div style="color: whites;" class="mt-2">
 				&copy; {{ site.time | date: '%Y' }}
-				<a href="{{site.url}}" style="color: black;">{{site.title}}</a>
-			</span>
+				<a href="{{site.url}}" style="color: white;">{{site.title}}</a>
+			</div>
 		</div>
-		<div class="col-6" style="color: black;">
-			<span>
-				
-			</span>
-
+		<div class="col-7 text-right py-2 " style="color: white;">
+			<div class="text-left float-right">
+				<div>
+					<a style="color:white" href="tel:{{site.phone}}"><i class="fa fa-phone fa-lg"></i>: {{site.phone}}</a>
+				</div>
+				<div class="mt-2">
+					<a style="color:white" href="mailto:{{site.email}}"><i class="fa fa-envelope fa-lg"></i>: {{site.email}}</a>
+				</div>
+			</div>
 		</div>
-	</div>
+			</div>
 
 </div>
